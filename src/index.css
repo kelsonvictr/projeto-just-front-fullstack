@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%) !important;
+  background-attachment: fixed !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Cards com ótimo contraste e legibilidade */
+.card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.card-body {
+  background: transparent !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Melhorar contraste dos textos */
+.card-title,
+.card h5,
+.card h4,
+.card h3,
+.form-label {
+  color: #2d3748 !important;
+  font-weight: 600 !important;
+}
+
+.card p {
+  color: #4a5568 !important;
+}
+
+.text-muted,
+.card .text-muted,
+.card small {
+  color: #718096 !important;
+}
+
+/* Inputs com ótima legibilidade */
+.form-control {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e0 !important;
+  color: #2d3748 !important;
+  font-size: 1rem;
+  padding: 0.6rem 0.75rem;
+}
+
+.form-control:focus {
+  background: #ffffff !important;
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15) !important;
+}
+
+.form-control::placeholder {
+  color: #a0aec0 !important;
+}
+
+/* Hero da home com ótimo contraste */
+.bg-white.rounded {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bg-white.rounded h1 {
+  color: #1a202c !important;
+  font-weight: 700 !important;
+}
+
+.bg-white.rounded p {
+  color: #4a5568 !important;
+  font-size: 1.1rem;
+}
+
+/* Melhorar badges */
+.badge {
+  font-weight: 600 !important;
+  padding: 0.5em 0.8em !important;
+  font-size: 0.875rem !important;
+}
+
+/* Botões com melhor contraste */
+.btn {
+  font-weight: 500 !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-dark {
+  background-color: #2d3748 !important;
+  border-color: #2d3748 !important;
+}
+
+.btn-dark:hover {
+  background-color: #1a202c !important;
+  border-color: #1a202c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 55, 72, 0.3) !important;
+}
+
+.btn-light {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #2d3748 !important;
+}
+
+.btn-light:hover {
+  background-color: #f7fafc !important;
+  border-color: #cbd5e0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Alertas com bom contraste */
+.alert {
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+.alert-success {
+  background-color: rgba(72, 187, 120, 0.15) !important;
+  color: #22543d !important;
+}
+
+/* Ícones coloridos */
+.bi-building {
+  color: #667eea !important;
+}
+
+.bi-box-seam,
+.bi-box {
+  color: #48bb78 !important;
+}
+
+.bi-people,
+.bi-person {
+  color: #4299e1 !important;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
